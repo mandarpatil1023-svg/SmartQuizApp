@@ -1,11 +1,58 @@
-.htaccess
-css.php
-rpc/
-sites/site*/admin/
-sites/site*/private/
-sites/site*/public/admin/
-sites/site*/public/setup/
-sites/site*/public/theme/
-textpattern/
-HISTORY.txt
-README.txt
+# ===============================
+# Android / Gradle
+# ===============================
+.gradle/
+build/
+**/build/
+local.properties
+
+# ===============================
+# Android Studio
+# ===============================
+.idea/
+*.iml
+*.ipr
+*.iws
+captures/
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# APK / AAB
+# ===============================
+*.apk
+*.aab
+
+# ===============================
+# Generated folders
+# ===============================
+.externalNativeBuild/
+.cxx/
+out/
+
+# ===============================
+# Firebase / secrets safety
+# ===============================
+google-services.json
+*.keystore
+*.jks
+
+# ===============================
+# Kotlin / Java temp
+# ===============================
+*.class
+*.dex
+
+# ===============================
+# Gradle wrapper logs
+# ===============================
+gradle-app.setting
