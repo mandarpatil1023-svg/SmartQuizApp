@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="space_xs">8dp</dimen>
+    <dimen name="space_sm">12dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="corner_large">16dp</dimen>
+    <dimen name="corner_xl">24dp</dimen>
+</resources>

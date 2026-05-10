@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.smartquiz.auth.SplashFragment"
+        android:label="Splash">
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splash_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.smartquiz.auth.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_signup"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.smartquiz.auth.SignupFragment"
+        android:label="Signup">
+        <action
+            android:id="@+id/action_signup_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.smartquiz.auth.ForgotPasswordFragment"
+        android:label="Forgot Password" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.smartquiz.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_quizList"
+            app:destination="@id/quizListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizListFragment"
+        android:name="com.smartquiz.quiz.QuizListFragment"
+        android:label="Quiz List">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_quizList_to_quiz"
+            app:destination="@id/quizFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.smartquiz.quiz.QuizFragment"
+        android:label="Quiz">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_quiz_to_result"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.smartquiz.result.ResultFragment"
+        android:label="Result">
+        <action
+            android:id="@+id/action_result_to_reviewAnswers"
+            app:destination="@id/reviewAnswersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reviewAnswersFragment"
+        android:name="com.smartquiz.result.ReviewAnswersFragment"
+        android:label="Review Answers" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.smartquiz.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_userDirectory"
+            app:destination="@id/userDirectoryFragment" />
+        <action
+            android:id="@+id/action_profile_to_adminAccess"
+            app:destination="@id/adminAccessFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminAccessFragment"
+        android:name="com.smartquiz.profile.AdminAccessFragment"
+        android:label="Admin Access">
+        <action
+            android:id="@+id/action_adminAccess_to_adminDashboard"
+            app:destination="@id/adminDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.smartquiz.profile.AdminDashboardFragment"
+        android:label="Admin Dashboard" />
+
+    <fragment
+        android:id="@+id/userDirectoryFragment"
+        android:name="com.smartquiz.profile.UserDirectoryFragment"
+        android:label="User Directory" />
+
+</navigation>

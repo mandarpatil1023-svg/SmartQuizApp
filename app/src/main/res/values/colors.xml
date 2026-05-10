@@ -1,0 +1,22 @@
+<resources>
+    <color name="primary">#22D3EE</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="secondary">#8B5CF6</color>
+    <color name="background">#07111F</color>
+    <color name="surface">#0B172A</color>
+    <color name="surfaceVariant">#17324D</color>
+    <color name="surfaceStrong">#10243A</color>
+    <color name="surfaceDark">#040B16</color>
+    <color name="textPrimary">#E6F4FF</color>
+    <color name="textSecondary">#9FB4C9</color>
+    <color name="textMuted">#6E86A0</color>
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+    <color name="danger">#EF4444</color>
+    <color name="glass">#9910223A</color>
+    <color name="glassStroke">#4038BDF8</color>
+    <color name="accentGold">#F59E0B</color>
+    <color name="accentSky">#38BDF8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
